@@ -1,0 +1,33 @@
+{{define "content"}}
+<tr>
+  <td style="padding:40px 48px;" class="pd-mobile">
+    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+      <tr>
+        <td style="padding-bottom:24px;">
+          <h1 class="font-mobile" style="margin:0; font-family:Georgia,'Times New Roman',serif; font-size:26px; font-weight:700; color:#0f172a; line-height:1.2;">
+            Welcome to {{.SiteName}} 👋
+          </h1>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p style="margin:0; font-family:Arial,Helvetica,sans-serif; font-size:14px; color:#64748b; line-height:1.8;">
+            Hi <strong style="color:#0f172a;">{{.Name}}</strong>,
+          </p>
+          <p style="margin:14px 0 0 0; font-family:Arial,Helvetica,sans-serif; font-size:14px; color:#64748b; line-height:1.8;">
+            Your account has been created successfully. You can now log in and start using the platform.
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td style="padding-top:28px;" align="center">
+          <a href="{{.LoginURL}}" class="pd-btn-mobile"
+            style="display:inline-block; background-color:#1d4ed8; border-radius:4px; padding:14px 32px; font-family:Arial,Helvetica,sans-serif; font-size:14px; font-weight:600; color:#ffffff; text-decoration:none;">
+            Log In to Your Account
+          </a>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+{{end}}
